@@ -1,0 +1,37 @@
+
+@media (max-width: 435px) {
+      .header {
+         max-height:50vw;
+        padding-left:5px; /* Remove o padding lateral para telas menores */
+        background-size: cover; /* Ajusta a imagem de fundo para caber dentro do header */
+       
+      }
+.header h1 {
+        font-size: 35px; /* Diminui o tamanho da fonte para telas menores */
+        ;
+      }
+
+
+     .container-conteudo {
+        display: flex;
+        flex-direction: column; /* Alinha os itens em coluna (vertical) */
+        gap: 10px; /* Espaço entre os itens */
+   
+  } 
+
+  .botao1{
+   display: flex;
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: center;
+    margin: auto;
+  }
+
+  .bloco2 {
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna (vertical) */
+    width: 100%; /* Ocupa toda a largura disponível */
+    margin:auto; /* Centraliza o bloco horizontalmente */
+    margin-top: 10px; /* Adiciona um espaço entre o bloco e o conteúdo acima */
+    
+  }
+}

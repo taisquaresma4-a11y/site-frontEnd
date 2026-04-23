@@ -1,0 +1,127 @@
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box; 
+    font-family: "Quintessential", serif;
+}
+
+body {
+    background-image: url(imagens/VS\ Desktop\ Wallpaper.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+
+}
+
+.corpoTodo{
+    height: auto;
+    border: 5px solid  rgb(193, 235, 184);
+    margin: 30px auto; /* o 30px da um respiro no topo e o auto centraliza as laterais */
+    max-width: 1200px;
+    width: 90%;
+    border-radius: 20px;
+    background-color: rgba(255, 192, 203, 0.664);
+    
+}
+
+.header {
+   background: url(imagens/_\ \(6\).jpeg) no-repeat center;
+   background-size: cover;
+   height: 20vw;
+  border-bottom: 5px solid rgb(193, 235, 184);
+  justify-content:flex-start;
+   align-items: flex-end;
+  border-radius: 15px 15px 0 0; 
+/* Topo-Esquerda | Topo-Direita | Baixo-Direita | Baixo-Esquerda */
+   padding: 30px;
+   display: flex;
+
+}
+
+.header h1{
+    font-size: 60px;
+    margin-bottom: -30px;
+
+  background: linear-gradient(to right, #5a4e32, #eeec89, #776637);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+    font-family: 'Times New Roman', Times, serif;
+    -webkit-text-stroke-width: 0.5px; /* Largura da borda */
+    -webkit-text-stroke-color: rgb(61, 29, 60); /* Cor da borda */
+  
+}
+
+.botao1 {
+  display:flex;
+  gap: 3px;  /* espaço entre os botoes */
+  margin-top: 0;
+  margin-left: 30px;
+  align-items: flex-start; /* Alinha os itens ao topo do container */
+}
+
+.botao1 a {
+    text-decoration: none;
+    color: blue;
+    background-color: #eeec89;
+    padding: 4px;
+     border-right: 3px solid #45472670;
+  border-bottom: 3px solid #45472670;  
+  transition: transform 0.2s ease-in-out; 
+ 
+}
+
+.corpo {
+  grid-column: 2; /* Fica na segunda coluna,linha 1 */
+  margin: 10px;
+    background: rgba(236, 232, 170, 0.514); 
+    /* padding: 0px 10px 10px; */
+   border: 2px solid rgba(109, 100, 76, 0.452);
+  border-radius: 15px;
+/* Topo-Esquerda | Topo-Direita | Baixo-Direita | Baixo-Esquerda */
+padding-bottom: 30px;
+height: 400px; 
+overflow-x: auto;
+}
+
+.botao2 {
+  display:flex;
+  margin-left: 4px;
+  padding-bottom: 2px;
+  padding-left: 3px;
+  width: fit-content; /* Ajusta a largura do botão ao conteúdo */
+ 
+}
+
+.botao2 a { 
+    text-decoration: none;
+    color: blue;
+    background-color: #eeec89;
+    padding: 2px;
+  border-right: 2px solid #45472670;
+  border-bottom: 2px solid #45472670; 
+   transition: transform 0.2s ease-in-out;/* Adicionado para o crescimento não ser um 'susto' */
+
+
+}
+ div.botao1 a:hover, div.botao2 a:hover {
+  transform: scale(1.1); /* Aumenta o tamanho do botão em 10% */
+    background-color: #f3f1a5; /* Opcional: clareia um pouco a cor */
+    padding-left: 10px;
+}
+
+[contenteditable="true"], [contenteditable="false"] {
+  padding: 5px;
+  width:100%; /* Largura do campo editável */
+   
+  
+    
+}
+
+
+
+[contenteditable="true"]:focus
+{
+    outline: none; /* Remove a borda de foco padrão */
+}

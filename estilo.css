@@ -1,0 +1,220 @@
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box; 
+    font-family: "Quintessential", serif;
+}
+
+body {
+    background-image: url(imagens/VS\ Desktop\ Wallpaper.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+
+}
+.corpoTodo{
+    height: auto;
+    border: 5px solid  rgb(193, 235, 184);
+    margin: 30px auto; /* o 30px da um respiro no topo e o auto centraliza as laterais */
+    max-width: 1200px;
+    width: 90%;
+    border-radius: 20px;
+    background-color: rgba(255, 192, 203, 0.664);
+    
+}
+
+.header {
+   background: url(imagens/๋࣭\ ⭑\ ♡⁺\ ⋆˙⊹.jpeg) no-repeat center;
+   background-size: cover;
+   height: 350px;
+  border-bottom: 5px solid rgb(193, 235, 184);
+  justify-content:flex-start;
+   align-items: flex-end;
+  border-radius: 15px 15px 0 0; 
+/* Topo-Esquerda | Topo-Direita | Baixo-Direita | Baixo-Esquerda */
+   padding: 30px;
+   display: flex;
+
+}
+
+
+.header h1{
+    font-size: 60px;
+    margin-bottom: -30px;
+
+  background: linear-gradient(to right, #5a4e32, #eeec89, #776637);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-family: 'Times New Roman', Times, serif;
+ -webkit-text-stroke-width: 0.5px; /* Largura da borda */
+  -webkit-text-stroke-color: rgb(61, 29, 60); /* Cor da borda */
+  
+}
+
+.container-conteudo {
+  height: auto;
+    display: grid;
+    grid-template-columns: 200px 1fr; /* [Inferência]: 200px para o menu e '1fr' para o resto ocupar o espaço */
+    padding: 0px 15px 15px 15px;
+    gap: 10px; /* Espaço entre os blocos */
+    align-items: stretch; /* Faz com que os blocos tenham a mesma altura */
+}
+
+
+.corpo {
+  grid-column: 2; /* Fica na segunda coluna,linha 1 */
+  margin: 10px;
+    background: rgba(236, 232, 170, 0.514); 
+    /* padding: 0px 10px 10px; */
+   border: 2px solid rgba(109, 100, 76, 0.452);
+  border-radius: 15px;
+/* Topo-Esquerda | Topo-Direita | Baixo-Direita | Baixo-Esquerda */
+padding-bottom: 30px;
+   
+}
+
+.corpo h3 {
+    color: saddlebrown;
+    background-color: rgba(106, 232, 241, 0.829);
+    padding: 5px;
+    border-bottom: 2px dashed #4547263a; 
+    border-top: 2px dashed #4547263a;
+    margin-bottom: 10px;
+    border-radius: 14px 14px 0px 0px;
+}
+
+.corpo p {
+    padding: 0px 10px 10px;
+    color: #454726;
+    line-height: 1.5; /* Aumenta o espaçamento entre as linhas para melhor leitura */
+}
+.atualizacao {
+    display: flex;
+    margin-top: 10px;
+    justify-content:center; /* Centraliza horizontalmente */
+     background: rgba(236, 232, 170, 0.514);
+    padding: 0px 10px 10px;
+    color: #454726;
+    font-size: 0.9em; /* Deixa o texto um pouco menor */
+}   
+
+.botao1 {
+  display:flex;
+  gap: 3px;  /* espaço entre os botoes */
+  margin-top: 0;
+  margin-left: 30px;
+  align-items: flex-start; /* Alinha os itens ao topo do container */
+  
+}
+
+.botao1 a {
+    text-decoration: none;
+    color: blue;
+    background-color: #eeec89;
+    padding: 2px;
+     border-right: 3px solid #45472670;
+  border-bottom: 3px solid #45472670;  
+  transition: transform 0.2s ease-in-out; 
+  cursor: pointer;
+}
+
+
+.botao2{
+  display:flex;
+  flex-direction: column; /* Alinha os itens em coluna (vertical) */
+  align-items: stretch; /*stretch para que todos os links ocupem a mesma largura */
+  gap: 2px;
+  margin-right: 2px;
+  padding-bottom: 2px;
+  padding-left: 3px;
+}
+
+.botao2 a  { 
+    text-decoration: none;
+    color: blue;
+    background-color: #eeec89;
+    padding: 2px;
+  border-right: 2px solid #45472670;
+  border-bottom: 2px solid #45472670; 
+   transition: transform 0.2s ease-in-out;/* Adicionado para o crescimento não ser um 'susto' */
+  
+
+
+}
+ div.botao1 a:hover, div.botao2 a:hover {
+  transform: scale(1.1); /* Aumenta o tamanho do botão em 10% */
+    background-color: #f3f1a5; /* Opcional: clareia um pouco a cor */
+    padding-left: 10px;
+}
+
+.bloco2 {
+  grid-row: 1/3; /* Faz com que o bloco ocupe as duas linhas da esquerda (se quiser que ele seja alto) */
+  width: 200px;
+  display: inline-block; /* Permite que o bloco se ajuste ao conteúdo */
+   background: rgba(236, 232, 170, 0.514);
+    padding-top: 5px;
+   max-height: 450px;
+   overflow-y: auto; /* Adiciona uma barra de rolagem vertical se o conteúdo ultrapassar a altura do bloco */
+   overflow-x: hidden; /* Esconde a barra de rolagem horizontal, se houver */
+    margin : 10px;
+  border-radius: 15px ;
+  border: 2px solid rgba(109, 100, 76, 0.452);
+  flex-shrink: 0; /* Impede que o bloco encolha */
+
+}
+.bloco2 h3{
+  display: inline-block;
+  color: saddlebrown;
+  background-color: rgba(121, 233, 98, 0.829);
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+ border-bottom: 2px dashed#4547263a; 
+ border-top: 2px dashed #4547263a;
+ padding-left: 5px;
+}
+
+.imagem {
+  grid-column: 2; /* Fica na segunda coluna, linha 2 */
+  background: url(imagens/Chi\ -\ Chobits\ -\ CLAMP.jpeg) no-repeat center;
+  background-size: cover;
+  border-radius: 15px;
+  border: 2px solid rgba(109, 100, 76, 0.452); 
+   max-width: 100%;
+  height: 200px;
+  border-radius: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.botao2_5{
+  display:flex;
+  flex-direction: column; /* Alinha os itens em coluna (vertical) */
+  align-items: stretch; /*stretch para que todos os links ocupem a mesma largura */
+  gap: 2px;
+  
+  
+  
+  
+}
+
+.botao2_5 a  { 
+    text-decoration: none;
+    color: blue;
+    background-color: #fdd66b;
+    padding: 2px;
+  border-right: 2px solid #45472670;
+  border-bottom: 2px solid #45472670; 
+   transition: transform 0.2s ease-in-out;/* Adicionado para o crescimento não ser um 'susto' */
+  
+
+
+}
+  div.botao2_5 a:hover {
+  transform: scale(1.1); /* Aumenta o tamanho do botão em 10% */
+    background-color:#f8dd94; /* Opcional: clareia um pouco a cor */
+    padding-left: 10px;
+}
+
