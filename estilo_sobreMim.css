@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url('imagens/VS%20Desktop%20Wallpaper.jpeg');
+    background-image: url(imagens/VS\ Desktop\ Wallpaper.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -26,7 +26,7 @@ body {
 }
 
 .header {
-   background: url(imagens/_\ \(6\).jpeg) no-repeat center;
+   background: url(imagens/imagem-sobreMim.jpeg) no-repeat center;
    background-size: cover;
    height: 20vw;
   border-bottom: 5px solid rgb(193, 235, 184);

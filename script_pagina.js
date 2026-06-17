@@ -32,7 +32,7 @@ function carregarConteudo() {
     const conteudoSalvo = localStorage.getItem(nomePagina); // carregar o conteúdo salvo do localStorage
     if (conteudoSalvo) { // se houver conteúdo salvo, exibi-lo no campo editável
         try {
-        const dados = JSON.parse(conteudoSalvo);
+        const dados = JSON.parse(conteudoSalvo); // pega uma string em texto simples e converte em um objeto
         conteudoEditavel.innerHTML = dados.conteudo; // exibir o conteúdo salvo no campo editável
         } catch (error) {
             conteudoEditavel.innerHTML = conteudoSalvo; // se o conteúdo salvo não for um JSON válido, exibi-lo diretamente no campo editável   
